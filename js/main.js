@@ -15,7 +15,8 @@ let studenti = [];
 // Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 studenti.push(studente);
 for (let i = 0; i < studenti.length; i++) {
-    console.log(studenti[i]);
+    console.log(studenti[i]["nome"]);
+	console.log(studenti[i].cognome);
 }
 
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
@@ -40,3 +41,4 @@ function crea (nom,cognom,et) {
     }
     return nuovoStudente
 }
+
